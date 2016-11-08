@@ -54,13 +54,13 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
@@ -113,11 +113,141 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-responsive.min.css" />
+    <Content Include="Content\bootstrap-wysihtml5.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\colorpicker.css" />
+    <Content Include="Content\datepicker.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\fullcalendar.css" />
+    <Content Include="Content\jquery.easy-pie-chart.css" />
+    <Content Include="Content\jquery.gritter.css" />
+    <Content Include="Content\matrix-login.css" />
+    <Content Include="Content\matrix-media.css" />
+    <Content Include="Content\matrix-style.css" />
+    <Content Include="Content\select2.css" />
+    <Content Include="Content\uniform.css" />
+    <Content Include="fonts\css\font-awesome.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\font\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
+    <Content Include="img\breadcrumb.png" />
+    <Content Include="img\demo\av1.jpg" />
+    <Content Include="img\demo\av2.jpg" />
+    <Content Include="img\demo\av3.jpg" />
+    <Content Include="img\demo\av4.jpg" />
+    <Content Include="img\demo\av5.jpg" />
+    <Content Include="img\demo\demo-image1.jpg" />
+    <Content Include="img\demo\demo-image2.jpg" />
+    <Content Include="img\demo\demo-image3.jpg" />
+    <Content Include="img\demo\envelope.png" />
+    <Content Include="img\gallery\imgbox1.jpg" />
+    <Content Include="img\gallery\imgbox2.jpg" />
+    <Content Include="img\gallery\imgbox3.jpg" />
+    <Content Include="img\gallery\imgbox4.jpg" />
+    <Content Include="img\gallery\imgbox5.jpg" />
+    <Content Include="img\glyphicons-halflings-white.png" />
+    <Content Include="img\gritter.png" />
+    <Content Include="img\hue.png" />
+    <Content Include="img\icons\16\book.png" />
+    <Content Include="img\icons\16\cabinet.png" />
+    <Content Include="img\icons\16\calendar.png" />
+    <Content Include="img\icons\16\client.png" />
+    <Content Include="img\icons\16\database.png" />
+    <Content Include="img\icons\16\download.png" />
+    <Content Include="img\icons\16\graph.png" />
+    <Content Include="img\icons\16\home.png" />
+    <Content Include="img\icons\16\lock.png" />
+    <Content Include="img\icons\16\mail.png" />
+    <Content Include="img\icons\16\pdf.png" />
+    <Content Include="img\icons\16\people.png" />
+    <Content Include="img\icons\16\piechart.png" />
+    <Content Include="img\icons\16\search.png" />
+    <Content Include="img\icons\16\shopping-bag.png" />
+    <Content Include="img\icons\16\survey.png" />
+    <Content Include="img\icons\16\tag.png" />
+    <Content Include="img\icons\16\user.png" />
+    <Content Include="img\icons\16\wallet.png" />
+    <Content Include="img\icons\16\web.png" />
+    <Content Include="img\icons\32\book.png" />
+    <Content Include="img\icons\32\cabinet.png" />
+    <Content Include="img\icons\32\calendar.png" />
+    <Content Include="img\icons\32\client.png" />
+    <Content Include="img\icons\32\dashboard.png" />
+    <Content Include="img\icons\32\database.png" />
+    <Content Include="img\icons\32\download.png" />
+    <Content Include="img\icons\32\graph.png" />
+    <Content Include="img\icons\32\home.png" />
+    <Content Include="img\icons\32\lock.png" />
+    <Content Include="img\icons\32\mail.png" />
+    <Content Include="img\icons\32\pdf.png" />
+    <Content Include="img\icons\32\people.png" />
+    <Content Include="img\icons\32\piechart.png" />
+    <Content Include="img\icons\32\search.png" />
+    <Content Include="img\icons\32\shopping-bag.png" />
+    <Content Include="img\icons\32\survey.png" />
+    <Content Include="img\icons\32\tag.png" />
+    <Content Include="img\icons\32\user.png" />
+    <Content Include="img\icons\32\wallet.png" />
+    <Content Include="img\icons\32\web.png" />
+    <Content Include="img\larrow.png" />
+    <Content Include="img\line.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\menu-active.png" />
+    <Content Include="img\rarrow.png" />
+    <Content Include="img\saturation.png" />
+    <Content Include="img\select2.png" />
+    <Content Include="img\spinner.gif" />
+    <Content Include="img\sprite.png" />
+    <Content Include="img\demo\Thumbs.db" />
+    <Content Include="img\icons\32\Thumbs.db" />
+    <Content Include="img\Thumbs.db" />
+    <Content Include="Scripts\bootstrap-colorpicker.js" />
+    <Content Include="Scripts\bootstrap-datepicker.js" />
+    <Content Include="Scripts\bootstrap-wysihtml5.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\es.js" />
+    <Content Include="Scripts\excanvas.min.js" />
+    <Content Include="Scripts\fullcalendar.min.js" />
+    <Content Include="Scripts\jquery.dataTables.min.js" />
+    <Content Include="Scripts\jquery.easy-pie-chart.js" />
+    <Content Include="Scripts\jquery.flot.crosshair.js" />
+    <Content Include="Scripts\jquery.flot.min.js" />
+    <Content Include="Scripts\jquery.flot.pie.js" />
+    <Content Include="Scripts\jquery.flot.pie.min.js" />
+    <Content Include="Scripts\jquery.flot.resize.min.js" />
+    <Content Include="Scripts\jquery.flot.stack.js" />
+    <Content Include="Scripts\jquery.gritter.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.peity.min.js" />
+    <Content Include="Scripts\jquery.ui.custom.js" />
+    <Content Include="Scripts\jquery.uniform.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.wizard.js" />
+    <Content Include="Scripts\locale-all.js" />
+    <Content Include="Scripts\masked.js" />
+    <Content Include="Scripts\matrix.calendar.js" />
+    <Content Include="Scripts\matrix.charts.js" />
+    <Content Include="Scripts\matrix.chat.js" />
+    <Content Include="Scripts\matrix.dashboard.js" />
+    <Content Include="Scripts\matrix.form_common.js" />
+    <Content Include="Scripts\matrix.form_validation.js" />
+    <Content Include="Scripts\matrix.interface.js" />
+    <Content Include="Scripts\matrix.js" />
+    <Content Include="Scripts\matrix.login.js" />
+    <Content Include="Scripts\matrix.popover.js" />
+    <Content Include="Scripts\matrix.tables.js" />
+    <Content Include="Scripts\matrix.wizard.js" />
+    <Content Include="Scripts\moment.min.js" />
+    <Content Include="Scripts\select2.min.js" />
+    <Content Include="Scripts\wysihtml5-0.3.0.js" />
+    <Content Include="Views\Home\Calendario.vbhtml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="Controllers\HomeController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -150,6 +280,14 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\font\fontawesome-webfont.eot" />
+    <Content Include="fonts\font\fontawesome-webfont.ttf" />
+    <Content Include="fonts\font\fontawesome-webfont.woff" />
+    <Content Include="fonts\font\FontAwesome.otf" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -161,6 +299,10 @@
     </None>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
+    <Content Include="Views\_ViewStart.vbhtml" />
+    <Content Include="Views\Shared\_Layout.vbhtml" />
+    <Content Include="Views\Home\Index.vbhtml" />
+    <Content Include="Views\Home\Graficos.vbhtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -170,7 +312,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
