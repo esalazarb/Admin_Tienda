@@ -16,5 +16,25 @@ Namespace Controllers
         Function Graficos() As ActionResult
             Return View()
         End Function
+
+        Function Registro_Usuarios() As ActionResult
+            Return View()
+        End Function
+
+        Function Registro_Categorias() As ActionResult
+            Return View()
+        End Function
+
+        Function Registro_SubCategorias() As ActionResult
+            Return View()
+        End Function
+
+        Function Registro_Tipos() As ActionResult
+            Return View()
+        End Function
+
+        Function Registro_Contacto() As ActionResult
+            Return View()
+        End Function
     End Class
 End Namespace

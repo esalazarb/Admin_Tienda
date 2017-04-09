@@ -10,7 +10,13 @@
     <link href="~/Content/matrix-style.css" rel="stylesheet" />
     <link href="~/Content/matrix-media.css" rel="stylesheet" />
     <link href="~/fonts/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/select2.css" rel="stylesheet" />
+    <link href="~/Content/colorpicker.css" rel="stylesheet" />
+    <link href="~/Content/datepicker.css" rel="stylesheet" />
+    <link href="~/Content/jquery.gritter.css" rel="stylesheet" />
+    <link href="~/Content/uniform.css" rel="stylesheet" />
 
+    <script src="~/Scripts/locale-all.js"></script>
     <script src="~/Scripts/jquery.flot.min.js"></script>
     <script src="~/Scripts/jquery.flot.pie.min.js"></script>
     <script src="~/Scripts/matrix.charts.js"></script>
@@ -18,6 +24,16 @@
     <script src="~/Scripts/jquery.peity.min.js"></script> 
     <script src="~/Scripts/matrix.dashboard.js"></script>
 
+    <script src="~/Scripts/bootstrap-colorpicker.js"></script>
+    <script src="~/Scripts/bootstrap-datepicker.js"></script>
+  @*  <script src="~/Scripts/jquery.toggle.buttons.js"></script>*@
+    <script src="~/Scripts/masked.js"></script>
+    <script src="~/Scripts/jquery.uniform.js"></script>
+    <script src="~/Scripts/select2.min.js"></script>
+    <script src="~/Scripts/matrix.form_common.js"></script>
+    <script src="~/Scripts/bootstrap-wysihtml5.js"></script>
+    <script src="~/Scripts/wysihtml5-0.3.0.js"></script>
+    <script src="~/Scripts/excanvas.min.js"></script>
 
     <script src="~/Scripts/moment.min.js"></script>
     <script src="~/Scripts/jquery.min.js"></script>
@@ -26,9 +42,11 @@
     <script src="~/Scripts/fullcalendar.min.js"></script>
     <script src="~/Scripts/matrix.js"></script>
     <script src="~/Scripts/matrix.calendar.js"></script>
-    <script src="~/Scripts/locale-all.js"></script>
     <link href="~/Content/jquery.gritter.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+
+  
+  
 
 
    
@@ -81,11 +99,22 @@
         <a href="#" class="visible-phone"><i class="icon icon-home"></i> Inicio</a>
         <ul>
             <li class="active"><a href="@Url.Action("Index", "Home")"><i class="icon icon-home"></i> <span>Inicio</span></a> </li>
-            <li> <a href="charts.html"><i class="icon icon-signal"></i> <span>Charts &amp; graphs</span></a> </li>
-            <li> <a href="widgets.html"><i class="icon icon-inbox"></i> <span>Widgets</span></a> </li>
-            <li><a href="tables.html"><i class="icon icon-th"></i> <span>Tables</span></a></li>
-            <li><a href="grid.html"><i class="icon icon-fullscreen"></i> <span>Full width</span></a></li>
+            <li><a href="@Url.Action("Registro_Contacto", "Home")"><i class="icon-list-alt"></i> <span>Registro de Contacto</span></a></li>
+            <li><a href="@Url.Action("Registro_Usuarios", "Home")"><i class="icon-group"></i> <span>Registro de Usuarios</span></a></li>
             <li class="submenu">
+                <a href="#"><i class="icon icon-th-list"></i> <span>Categorización</span> </a>
+                <ul>
+                    <li><a href="@Url.Action("Registro_Categorias", "Home")"><i class="icon-list"></i><span>Registro de Categorías</span></a></li>
+                    <li><a href="@Url.Action("Registro_SubCategorias", "Home")"><i class="icon-indent-right"></i><span>Registro de SubCategorías</span></a></li>
+                    <li><a href="@Url.Action("Registro_Tipos", "Home")"><i class="icon-list-ol"></i><span>Registro de Tipos</span></a></li>
+                </ul>
+            </li>
+            <li> <a href="charts.html"><i class="icon-qrcode"></i> <span>Registro de Telas</span></a> </li>
+            <li> <a href="widgets.html"><i class="icon-tags"></i> <span>Registro de Prendas</span></a> </li>
+            <li> <a href="widgets.html"><i class="icon-gift"></i> <span>Promociones</span></a> </li>
+            <li><a href="tables.html"><i class="icon-shopping-cart"></i> <span>Pedidos</span><span class="label label-important">5</span></a></li>
+           
+            @*<li class="submenu">
                 <a href="#"><i class="icon icon-th-list"></i> <span>Forms</span> <span class="label label-important">3</span></a>
                 <ul>
                     <li><a href="form-common.html">Basic Form</a></li>
@@ -104,8 +133,8 @@
                     <li><a href="invoice.html">Invoice</a></li>
                     <li><a href="chat.html">Chat option</a></li>
                 </ul>
-            </li>
-            <li class="submenu">
+            </li>*@
+            @*<li class="submenu">
                 <a href="#"><i class="icon icon-info-sign"></i> <span>Error</span> <span class="label label-important">4</span></a>
                 <ul>
                     <li><a href="error403.html">Error 403</a></li>
@@ -121,15 +150,15 @@
                 </div>
                 <span class="percent">77%</span>
                 <div class="stat">21419.94 / 14000 MB</div>
-            </li>
-            <li class="content">
+            </li>*@
+            @*<li class="content">
                 <span>Disk Space Usage</span>
                 <div class="progress progress-mini active progress-striped">
                     <div style="width: 87%;" class="bar"></div>
                 </div>
                 <span class="percent">87%</span>
                 <div class="stat">604.44 / 4000 MB</div>
-            </li>
+            </li>*@
         </ul>
     </div>
     <!--sidebar-menu-->
@@ -168,34 +197,33 @@
     <!--Footer-part-->
  
     <div class="row-fluid">
-        <div id="footer" class="span12"> 2013 &copy; Admin Tienda. Brought to you by <a href="http://themedesigner.in">Themedesigner.in</a> </div>
+        <div id="footer" class="span12"> 2017 &copy; Admin Tienda. Todos los derechos reservados</div>
     </div>
 
     <!--end-Footer-part-->
 
-    <script src="js/excanvas.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.ui.custom.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.flot.min.js"></script>
-    <script src="js/jquery.flot.resize.min.js"></script>
-    <script src="js/jquery.peity.min.js"></script>
-    <script src="js/fullcalendar.min.js"></script>
-    <script src="js/matrix.js"></script>
-    <script src="js/matrix.dashboard.js"></script>
-    <script src="js/jquery.gritter.min.js"></script>
-    <script src="js/matrix.interface.js"></script>
-    <script src="js/matrix.chat.js"></script>
-    <script src="js/jquery.validate.js"></script>
-    <script src="js/matrix.form_validation.js"></script>
-    <script src="js/jquery.wizard.js"></script>
-    <script src="js/jquery.uniform.js"></script>
-    <script src="js/select2.min.js"></script>
-    <script src="js/matrix.popover.js"></script>
-    <script src="js/jquery.dataTables.min.js"></script>
-    <script src="js/matrix.tables.js"></script>
+    @*<script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/jquery.ui.custom.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>*@
+    @*<script src="~/Scripts/jquery.flot.min.js"></script>
+    <script src="~/Scripts/jquery.flot.resize.min.js"></script>*@
+    @*<script src="~/Scripts/jquery.peity.min.js"></script>
+    <script src="~/Scripts/fullcalendar.min.js"></script>
+    <script src="~/Scripts/matrix.js"></script>
+    <script src="~/Scripts/matrix.dashboard.js"></script>
+    <script src="~/Scripts/jquery.gritter.min.js"></script>
+    <script src="~/Scripts/matrix.interface.js"></script>*@
+    @*<script src="~/Scripts/matrix.chat.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/matrix.form_validation.js"></script>
+    <script src="~/Scripts/jquery.wizard.js"></script>
+    <script src="~/Scripts/jquery.uniform.js"></script>
+    <script src="~/Scripts/select2.min.js"></script>
+    <script src="~/Scripts/matrix.popover.js"></script>
+    <script src="~/Scripts/jquery.dataTables.min.js"></script>
+    <script src="~/Scripts/matrix.tables.js"></script>*@
 
-    <script type="text/javascript">
+    @*<script type="text/javascript">
   // This function is called from the pop-up menus to transfer to
   // a different page. Ignore if the value returned is a null string:
   function goPage (newURL) {
@@ -218,6 +246,6 @@
 function resetMenu() {
    document.gomenu.selector.selectedIndex = 2;
 }
-    </script>
+    </script>*@
 </body>
 </html>

@@ -303,6 +303,11 @@
     <Content Include="Views\Shared\_Layout.vbhtml" />
     <Content Include="Views\Home\Index.vbhtml" />
     <Content Include="Views\Home\Graficos.vbhtml" />
+    <Content Include="Views\Home\Registro_Usuarios.vbhtml" />
+    <Content Include="Views\Home\Registro_Categorias.vbhtml" />
+    <Content Include="Views\Home\Registro_SubCategorias.vbhtml" />
+    <Content Include="Views\Home\Registro_Tipos.vbhtml" />
+    <Content Include="Views\Home\Registro_Contacto.vbhtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
